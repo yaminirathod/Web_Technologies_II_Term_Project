@@ -1,0 +1,81 @@
+<!-- HTML CODE FOR REGISTER PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Travel Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jsmain1.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<ul>
+  <li><img class="logoimg" src="images/logomain.png" alt="Images"/></li>
+  <li><a href="website.html">Home</a></li>
+  <li><a href="explore.html">Explore Places</a></li>
+  <li><a href="packages.html">Packages</a></li>
+  <li><a href="offers.html">Offers</a></li>
+  <li><a href="review.html">Reviews</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="covidupdate.html">Covid19 Update</a></li>
+  <li><a class="active" href="login.html">Login</a></li>
+</ul>
+
+    <div>
+	<h2>Register</h2>
+        <div class="newslettermain">
+          <div class="col-6">
+            <form method="post" action="login.html" name="contactusform" id="contactusform" class="newslettermainform"></form>
+              <p><h3>Required Account Information</h3></p>
+              <label>Title *:</label>
+              <select name="title" id="title">
+                  <option value="MASTER">MASTER</option>
+                  <option value="MISS">MISS</option>
+                  <option value="MR">MR</option>
+                  <option value="MRS">MRS</option>
+                  <option value="MS">MS</option>
+              </select>
+              <label>First name/Given name *:</label>
+              <input type="text" id="firstname" name="firstname">
+              <label>Last name/Family name *:</label>
+              <input type="text" id="lastname" name="lastname">
+              <label>Name on card *:</label>
+              <input type="text" id="cardname" name="cardname">
+              <label>Date of birth (DD/MM/YYYY) *:</label>
+              <input type="text" id="datepicker" name="birthdate">
+              <label>Mothers maiden name *:</label>
+              <input type="text" id="maiden_name" name="maiden_name">
+            <p><h3>Travel Document</h3></p>
+
+            <label>Passport number *:</label>
+            <input type="text" id="passport" name="passport">
+
+              <label>Passport Expiry Date (DD/MMM/YYYY):*</label>
+            <input type="text" id="expirydate" name="expirydate">
+
+           <label>Password *:</label>
+            <input type="password" id="password" name="password" >
+              <input type="submit" value="Submit">
+          </form>
+        </div>
+</div>
+</div>
+    </div>
+    <div class="copyright">
+        &copy; Copyright. Emerging Technology Project.
+    </div>
+</body>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</html>

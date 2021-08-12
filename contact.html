@@ -1,0 +1,116 @@
+<!-- HTML CODE FOR CONTACT US PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Travel Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jsmain1.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<ul>
+  <li><img class="logoimg" src="images/logomain.png" alt="Images"/></li>
+  <li><a href="website.html">Home</a></li>
+  <li><a href="explore.html">Explore Places</a></li>
+  <li><a href="packages.html">Packages</a></li>
+  <li><a href="offers.html">Offers</a></li>
+  <li><a href="review.html">Reviews</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a class="active" href="contact.html">Contact Us</a></li>
+  <li><a href="covidupdate.html">Covid19 Update</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+
+
+<div class="about-section">
+  <h1>Contact detail</h1>
+  <p>Phone no: +1 800 299 0000, Email Id: royaltravelclub@gmail.com</p>
+  <p>Hours of operation: Monday to Friday 10AM to 5PM</p>
+</div>
+
+
+<div>
+	
+<h2>Contact Form</h2>
+
+<div class="newslettermain">
+  <form method="post" name="contactusform" id="contactusform" class="newslettermainform" onSubmit="JavaScript:check();">
+    <label>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+     <label>Email-ID</label>
+    <input type="email" id="emailid" name="emailid" placeholder="Your Email ID..">
+	
+       <label>Contact Number</label>
+       <input type="number" id="contact" name="contact" placeholder="Your Contact Number..">
+	
+       <label>Date Of Birth</label>
+       <div id="datepicker"></div>
+		<script src="external/jquery/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script>
+
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+
+		</script>
+	
+      <label>City</label>
+    <input type="text" id="city" name="city" placeholder="Your city name..">
+	
+   <label>State</label>
+    <input type="text" id="state" name="state" placeholder="Your state name..">
+	
+    <label>Country</label>
+    <select id="country" name="country">
+      <option value="canada">Canada</option>
+      <option value="australia">Australia</option>
+      <option value="usa">India</option>
+      <option value="canada">Bangladesh</option>
+      <option value="australia">Shrilanka</option>
+      <option value="usa">Pakistan</option>
+    </select>
+
+    <label>Query</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+</div>
+
+<!--
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+   <label for="locationmap">Enter your location</label>
+   <input type="text" name="locationmap" />
+   <input type="hidden" name="defaultaddress" value="Syamal Cross, Ahmedabad" />
+   <input type="submit" value="Get Directions" />
+</form>
+-->
+
+<div class="contactus-image-main">
+	<img src="images/location.jpg" alt="contactus" />
+</div>
+
+<div class="contactus-image-main">
+	<img src="images/contactus1.jpg" alt="contactus" />
+</div>
+<div class="copyright">
+	&copy; Copyright. Designed by Royal Travel Club.
+</div>
+  
+</body>
+</html>
